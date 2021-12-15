@@ -9,9 +9,9 @@ export class UsersController{
 
         const service = new UsersService();
 
-        const { id, name, email, admin} = request.body;
+        const {name, email, admin} = request.body;
 
-        const user = await service.execute({id, name, email, admin})       
+        const user = await service.execute({name, email, admin})       
 
 
         return response.json(user)
