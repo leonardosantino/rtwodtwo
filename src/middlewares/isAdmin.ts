@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from "express";
 
 export function isAdmin(request: Request, response: Response, nextfucntion: NextFunction) {
 
-    const admin = false;
+    const admin = true;
 
     if (admin) {
         return nextfucntion();
